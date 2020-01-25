@@ -23,7 +23,7 @@ function DevForm({ onSubmit }) {
     );
   }, []);
 
-  async function handleSubmit() {
+  async function handleSubmit(e) {
     e.preventDefault();
 
     await onSubmit({
@@ -84,3 +84,5 @@ function DevForm({ onSubmit }) {
     </form>
   )
 }
+
+export default DevForm;
